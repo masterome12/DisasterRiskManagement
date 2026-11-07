@@ -1,0 +1,10 @@
+# Prevent script execution in uploads folder
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|cgi|sh|asp)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>

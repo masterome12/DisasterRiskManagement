@@ -1,0 +1,6 @@
+/config/db_local.php
+/uploads/incidents/*
+!/uploads/incidents/.gitkeep
+/uploads/profiles/*
+!/uploads/profiles/.gitkeep
+*.log
